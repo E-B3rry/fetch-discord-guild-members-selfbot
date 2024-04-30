@@ -1,11 +1,11 @@
 # Guild Members Fetcher
 
-Guild Members Fetcher is a Discord bot that fetches all the members from a specified guild and saves the data into a .csv file. The bot is built using Python and the discord.py-self library.
+Guild Members Fetcher is a Discord selfbot that fetches all the members from a specified guild and saves the data into a .csv file. The bot is built using Python and the discord.py-self library.
 
 ## Features
 
 - Fetches all members from a specified guild.
-- Save the fetched data into a .csv file (currently, only the member's ID, username, display name, joined date, account creation date, mutual guilds and servers list (name and id) and count)
+- Save the fetched data into a .csv file (currently, only the member's ID, username, display name, joined date, account creation date, mutual guilds and servers — count and comma-separated list (`name (id)`) for both)
 - Interface with the bot in Discord using "commands."
 
 ## Installation
@@ -30,9 +30,9 @@ python main.py
 ```
 Use the following commands in any Discord channel (strongly recommended to use private channels):
 
-- `membersfetcher help | h` - Display the help message.
-- `mf fetch | run <guild_id> [<file_name>]` - Fetch members from guild and save them into a .csv file.
-- `mf shutdown | suicide | kill` - Kills the bot instance.
+- `membersfetcher help` - Display the help message.
+- `mf run <guild_id> [<file_name>]` - Fetch members from guild and save them into a .csv file.
+- `mf shutdown` - Kills the bot instance.
 
 
 ## Customization
