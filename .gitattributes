@@ -1,0 +1,5 @@
+# Clean secrets from python files using stream editor (sed) command
+# You can apply this git filter [globally or not] with this command (please run it in git bash on Windows):
+#git config [--global] filter.clean-secrets.clean "sed -E \"s/(\\\"|'')[^\\\"']*(\\\"|'') *# token-no-commit/\\1\\1  # token-no-commit/g\""
+# Then, applies this filter to all constants.py files in the repository with the .gitattributes file:
+constants.py filter=clean-secrets
